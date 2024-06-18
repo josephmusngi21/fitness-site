@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="catalog_style.css" />
+	<link rel="stylesheet" href="styles.css">
+    <title>Exercise Catalog</title>
+  </head>
+  <body>
+<nav id="navigation">
+    <div class="logo">
+        <a href="home.html">
+            <img src="images/logo.png" alt="Fitness Website Logo" class="logo">
+        </a>
+    </div>
+    <div class="nav-items">
+        <a onclick="toggleDisplay('workout')" id="workout-routines" href="#">Workout Routines</a>
+        <a onclick="toggleDisplay('muscle-group')" id="muscle-group" href="#">Muscle Group</a>
+        <a id="exercise-catalog" href="catalog.html">Exercise Catalog</a>
+        <a onclick="toggleDisplay('stories')" id="success-stories" href="#">Success Stories</a>
+        <a onclick="toggleDisplay('nutrition')" id="nutritional-guide" href="#">Nutritional Guide</a>
+        <a onclick="toggleDisplay('join')" id="join-now" href="#">Join Now</a>
+    </div>
+    <div class="email">
+        <a href="mailto:Fitness@gmail.com">Email Us</a> 
+    </div>
+</nav>
+
+<div class="content">
+    <div class="muscle">
+    	<h1 class="muscle-header">Exercises by muscle group</h1>
+    	<div class="splits">
+    	<div class="upper">
+    		<h2 style="font-size:20px;">Upper Body</h2>
+    			<ul class="upper-list">
+    				<li><a href="musclegroups/back.html">Back</a></li>
+    				<li><a href="musclegroups/bicep.html">Biceps</a></li>
+    				<li><a href="musclegroups/chest.html">Chest</a></li>
+    				<li><a href="musclegroups/shoulders.html">Shoulders</a></li>
+    				<li><a href="musclegroups/tricep.html">Triceps</a></li>
+    			</ul>
+    	</div>
+    	
+    	<div class="lower">
+    		<h2 style="font-size:20px;">Lower Body</h2>
+    			<ul class="lower-list">
+    				<li><a href="musclegroups/quads.html">Quadriceps</a></li>
+    				<li><a href="musclegroups/hamstrings.html">Hamstrings</a></li>
+    				<li><a href="musclegroups/calfs.html">Calfs</a></li>
+    			</ul>
+    	</div>
+    	
+    	<div class="core">
+    		<h2 style="font-size:20px;">Core</h2>
+    			<ul class="core-list">
+    				<li><a href="musclegroups/abs.html">Abs</a></li>
+    			</ul>
+    	</div>
+    	
+    	</div>
+    	
+	</div>
+</div>
+	<img src="images/fullbody2.jpg" alt="Full Body Workout Image" class="fullbody">
+	<script src="script.js" defer></script>
+    </body>
+	</html>

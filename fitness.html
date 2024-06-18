@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="navigation">
+    <div class="logo">
+        <a href="home.html">
+            <img src="images/logo.png" alt="Fitness Website Logo" class="logo">
+        </a>
+    </div>
+
+    <div class="dark-mode-toggle">
+        <label for="darkMode">Dark Mode:</label>
+        <input type="checkbox" id="darkMode">
+    </div>
+
+    <div class="nav-items">
+        <a onclick="toggleDisplay('workout')" id="workout-routines" href="#">Workout Routines</a>
+        <a onclick="toggleDisplay('muscle-group')" id="muscle-group" href="#">Muscle Group</a>
+        <a id="exercise-catalog" href="catalog.html">Exercise Catalog</a>
+        <a onclick="toggleDisplay('stories')" id="success-stories" href="#">Success Stories</a>
+        <a onclick="toggleDisplay('nutrition')" id="nutritional-guide" href="#">Nutritional Guide</a>
+        <a onclick="toggleDisplay('join')" id="join-now" href="#">Join Now</a>
+    </div>
+    <div class="email">
+        <a href="mailto:Fitness@gmail.com">Email Us</a> 
+    </div>
+</nav>
+
+<div class="home">
+    <div class="hero">
+        <div class="hero-text">
+            <h1 id="header">Welcome to Fitness4U</h1>
+            <p>Join us to start your journey toward better health.</p>
+        </div>
+    </div>
+    </header>
+    <div class="content-grid">
+    
+    <section class="workout-routines"> <!!--class not in use-->
+        <h2>Unlock the Power of Personalized Training</h2>
+        <p>At Fitness4U, we understand that every fitness journey is unique. That's why we've meticulously crafted a diverse array of workout routines to cater to various fitness levels, from beginners to advanced athletes. Whether you're looking to kickstart your fitness regime or challenge yourself with more intense workouts, our comprehensive library has something just for you.</p>
+    </section>
+    
+    <section class="workout-routines-video"><!!--class not in use-->
+    <video width="400" height="250" controls autoplay muted class="right-content">
+      <source src="images/workoutDemoVid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </section>
+    
+    <section class="muscle-groups"><!!--class not in use-->
+        <h2>Discover Your Strength: Explore the Main Muscle Groups</h2>
+        <p>Welcome to the core of your fitness journey! Understanding the main muscle groups is not just about knowing your body better—it's about crafting a more effective, balanced, and safe workout routine. Let's dive into the essentials of muscle anatomy and how each group plays a pivotal role in your everyday movements and athletic performance.</p>
+    </section>
+    
+    <section class="muscle-groups-image"><!!--class not in use-->
+        <h2>Muscle Group of the Day</h2>
+        <img src="images/muscle-of-day.jpg" alt="Arm Muscle Group Diagram" class="right-content" style="width: 300px; height: 200px; object-fit: cover;">
+    </section>
+    
+    <section class="nutrition-guide"><!!--class not in use-->
+        <h2>Eat Good Feel Good</h2>
+        <p>We believe that a well-rounded fitness regimen is incomplete without a tailored nutritional strategy. That's why our team of certified nutritionists and fitness experts have developed comprehensive meal plans that do more than just complement your workouts—they enhance them. Whether you're looking to build muscle, lose weight, or boost your overall health, our easy-to-follow meal plans are designed to fuel your body with the right nutrients at the right times.</p>
+    </section>
+    
+    <section class="healthy-foods-image"><!!--class not in use-->
+        <img src="images/healthyFoods.jpg" alt="Healthy Balanced Meal" class="right-content" style="width: 400px; height: 300px; object-fit: cover;">
+    </section>
+    
+    <section class="success-stories"><!!--class not in use-->
+        <h2>Get Inspired</h2>
+        <p>Dive into a world of transformation and empowerment with our collection of inspiring success stories. Here, you'll discover the powerful journeys of individuals just like you who embarked on their fitness paths with dedication and perseverance. These stories highlight not just the physical transformations but also the emotional and psychological boosts that come from embracing a healthier lifestyle. Join us to see how taking control of your fitness journey can lead to profound changes, not just in how you look, but in how you feel and live every day. Join our community, get inspired, and start writing your own success story today.</p>
+    </section>
+    
+    <section class="happy-people-image"><!!--class not in use-->
+        <img src="images/happy-people.jpg" alt="Happy Women Smiling at Eachother" class="right-content" style="width: 400px; height: 300px; object-fit: cover;">
+    </section>
+    </div>
+    
+    <footer>
+        <p>Join our fitness community and start your journey today!</p>
+    </footer>    
+</div>
+
+<div class="nutrition">
+    <div class= "nutrition-page"> 
+        <div class="nutrition-intro">
+          <h1>Value of Nutrition</h1>
+          <p>Nutrition plays a crucial role in achieving optimal fitness levels and reaching your health and wellness goals. 
+            Whether you're aiming to build muscle, shed excess weight, or improve endurance, fueling your body with the right nutrients is 
+            essential for performance, recovery, and overall well-being. In this guide, we'll explore the fundamentals of 
+            fitness nutrition to help you make informed choices and maximize your fitness journey.</p>
+        </div>
+        <div class="nutrition-info">
+          <div class="hydration">
+            <h1>Hydration</h1>
+            <p>
+              Hydration refers to the process of maintaining adequate fluid balance in the body to support optimal physiological function. 
+              Water is essential for regulating body temperature, transporting nutrients and oxygen to cells, lubricating joints, and 
+              removing waste products. Proper hydration is crucial for overall health and well-being, especially during physical activity 
+              when fluid loss through sweat increases. It is recommended to consume an adequate amount of water throughout the day, with 
+              additional fluids before, during, and after exercise to prevent dehydration and optimize performance.
+            </p>
+          </div>
+          <div class="macros">
+            <h1>Macronutrients</h1>
+            <p>
+              Macronutrients are the essential nutrients required by the body in large quantities to support various physiological functions. 
+              They include carbohydrates, proteins, and fats. Carbohydrates are the primary energy source, proteins are crucial for 
+              muscle repair and growth, and fats provide energy, support cell function, and aid in nutrient absorption.
+            </p>
+          </div>
+          <div class="micros">
+            <h1>Micronutrients</h1>
+            <p>
+              Micronutrients are essential vitamins and minerals required by the body in smaller quantities to regulate metabolism, 
+              support growth and development, and maintain overall health. Examples include vitamins A, C, D, E, and K, as well 
+              as minerals such as calcium, iron, magnesium, and zinc. Micronutrients play vital roles in enzyme function, immune function, 
+              and bone health, among other functions.
+            </p>
+          </div>
+          <!--Meal Plans-->
+        </div>
+        <div class="mealplans">
+          <h1>Check Out These Sample Meal Plans</h1>
+          <div class="muscle_gain">
+            <h1>Muscle Gain Plan</h1>
+            <p>The muscle gain meal plan is specifically designed to provide the necessary nutrients and energy to support 
+              muscle growth and repair. By incorporating lean proteins, complex carbohydrates, and healthy fats into each meal 
+              and snack, this plan aims to optimize the body's ability to build and maintain muscle mass. Adequate protein intake, 
+              coupled with balanced nutrition and regular strength training, is essential for stimulating muscle protein synthesis 
+              and achieving hypertrophy, leading to increased muscle size, strength, and overall fitness.
+            </p>
+            <table class="table-centered">
+              <tr>
+                <th>Meal</th>
+                <th>Menu</th>
+              </tr>
+              <tr>
+                <td>Breakfast</td>
+                <td>
+                  Scrambled eggs with spinach and bell peppers<br>
+                  Whole grain toast<br>
+                  Greek yogurt with berries
+                </td>
+              </tr>
+              <tr>
+                <td>Mid-Morning Snack</td>
+                <td>Protein shake with banana and almond milk</td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>
+                  Grilled chicken breast<br>
+                  Quinoa salad with mixed vegetables (bell peppers, cucumber, cherry tomatoes)<br>
+                  Avocado slices
+                </td>
+              </tr>
+              <tr>
+                <td>Afternoon Snack</td>
+                <td>
+                  Whole grain crackers with hummus<br>
+                  Carrot sticks
+                </td>
+              </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>
+                  Baked salmon<br>
+                  Sweet potato<br>
+                  Steamed broccoli<br>
+                  Mixed green salad with olive oil and balsamic vinegar dressing
+                </td>
+              </tr>
+            </table>  
+          </div>
+          <div class="endurance_meal">
+            <h1>Endurance Plan</h1>
+            <p>This endurance meal plan is designed to fuel your body for sustained physical activity, such as long-distance running, 
+              cycling, or swimming. It emphasizes a balance of carbohydrates, proteins, and healthy fats, along with plenty of fruits, 
+              vegetables, and whole grains to provide sustained energy and support recovery. Regular hydration and intake of electrolytes 
+              are also prioritized to maintain optimal performance.
+            </p>
+            <table class="table-centered">
+              <tr>
+                <th>Meal</th>
+                <th>Menu</th>
+              </tr>
+              <tr>
+                <td>Breakfast</td>
+                <td>
+                  Whole grain oatmeal with bananas, a tablespoon of chia seeds, and almonds.<br>
+                  A glass of orange juice.<br>
+                </td>
+              </tr>
+              <tr>
+                <td>Mid-Morning Snack</td>
+                <td>
+                  Greek yogurt topped with mixed berries and a drizzle of honey.
+                </td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>
+                  Whole wheat wrap filled with grilled chicken or tofu, mixed greens, sliced avocado, and hummus.<br>
+                  A side salad with plenty of colorful veggies like bell peppers, carrots, and tomatoes.
+                </td>
+              </tr>
+              <tr>
+                <td>Afternoon Snack</td>
+                <td>
+                  Whole grain crackers with a tablespoon of almond butter or hummus.<br>
+                  Carrot and cucumber sticks for crunch and hydration.
+                </td>
+              </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>
+                  Baked salmon or tofu with quinoa or brown rice and steamed broccoli or asparagus.<br>
+                  A mixed green salad with a variety of veggies, topped with a light vinaigrette dressing.<br>
+                  A side of roasted sweet potatoes for complex carbohydrates and potassium.
+                </td>
+              </tr>
+            </table>  
+          </div>
+          <div class="fat_lossPlan">
+            <h1>Fat Loss Plan</h1>
+            <p>This fat loss meal plan focuses on providing nutritious, satisfying meals that support weight loss goals. 
+              It features lean proteins, fiber-rich vegetables, and whole grains, while minimizing added sugars and processed foods.
+              Each meal is designed to keep you feeling full and energized throughout the day while promoting a calorie deficit for fat burning. 
+            </p>
+            <table class="table-centered">
+              <tr>
+                <th>Meal</th>
+                <th>Menu</th>
+              </tr>
+              <tr>
+                <td>Breakfast</td>
+                <td>
+                  Scrambled egg whites with spinach and tomatoes.<br>
+                  1 slice of whole grain toast.<br>
+                  A small bowl of mixed berries.
+                </td>
+              </tr>
+              <tr>
+                <td>Mid-Morning Snack</td>
+                <td>
+                  Greek yogurt with sliced strawberries and a sprinkle of chia seeds.
+                </td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td>
+                  Grilled chicken breast or tofu with a colorful salad (mixed greens, bell peppers, cucumbers, carrots) 
+                  drizzled with balsamic vinaigrette.<br>
+                  Quinoa or brown rice on the side.
+                </td>
+              </tr>
+              <tr>
+                <td>Afternoon Snack</td>
+                <td>
+                  Sliced bell peppers and carrots with hummus.<br>
+                </td>
+              </tr>
+              <tr>
+                <td>Dinner</td>
+                <td>
+                  Grilled lean sirloin steak or portobello mushrooms (for a vegetarian option) seasoned with garlic and herbs.<br>
+                  Sautéed spinach and kale with a squeeze of lemon juice and a sprinkle of pine nuts.<br>
+                  Cauliflower rice sautéed with diced bell peppers, onions, and a dash of low-sodium soy sauce.
+                </td>
+              </tr>
+            </table>  
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="catalog">
+    <div class="content">
+        <div class="muscle">
+            <h1 class="muscle-header">Exercises by muscle group</h1>
+            <div class="splits">
+            <div class="upper">
+                <h2 style="font-size:20px;">Upper Body</h2>
+                    <ul class="upper-list">
+                        <li><a href="musclegroups/back.html">Back</a></li>
+                        <li><a href="musclegroups/bicep.html">Biceps</a></li>
+                        <li><a href="musclegroups/chest.html">Chest</a></li>
+                        <li><a href="musclegroups/shoulders.html">Shoulders</a></li>
+                        <li><a href="musclegroups/tricep.html">Triceps</a></li>
+                    </ul>
+            </div>
+            
+            <div class="lower">
+                <h2 style="font-size:20px;">Lower Body</h2>
+                    <ul class="lower-list">
+                        <li><a href="musclegroups/quads.html">Quadriceps</a></li>
+                        <li><a href="musclegroups/hamstrings.html">Hamstrings</a></li>
+                        <li><a href="musclegroups/calfs.html">Calfs</a></li>
+                    </ul>
+            </div>
+            
+            <div class="core">
+                <h2 style="font-size:20px;">Core</h2>
+                    <ul class="core-list">
+                        <li><a href="musclegroups/abs.html">Abs</a></li>
+                    </ul>
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+        <img src="images/fullbody2.jpg" alt="Full Body Workout Image" class="fullbody">
+</div>
+
+<div class="join">
+    <div class="content-join">
+        <div class="parallax">
+            <h2 id="header">JOIN OUR MAILING LIST</h2>
+        </div>
+        <div class="form-container">
+            <form id="joinForm" action="#" method="POST" onsubmit="return validateForm()"> 
+                <div class="form-row">
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Doe">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email*</label>
+                    <input type="text" id="formEmail" name="email" placeholder="johndoe@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="feedback">Feedback</label>
+                    <input type="text" id="feedback" name="feedback" placeholder="Optional">
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="muscle-group">
+    <div class="container">
+        <div class="muscle-sections">
+            <section class="arms-section">
+                <h2>Upper Body</h2>
+                <ol>
+                <li><p><strong>Latissimus Dorsi (Lats):</strong></p></li>
+                <p></p>
+                <ul>
+                  <li><strong>Location:</strong> Broad muscle of the back</li>
+                  <li><strong>Functions:</strong>Primary muscle involved in pulling movements of the upper body, like pulling the arms down and toward the body.</li>
+                  <li><strong>Importance:</strong> Essential for activities like pulling, rowing, and swimming. Strong lats contribute to upper body strength, posture, and shoulder stability</li>
+                  <li><strong>Exercises:</strong>Pull-ups, pull-downs, lat pull-downs </li>
+                </ul>
+                <li><p><strong>Biceps:</strong></p></li>
+                <ul>
+                  <li><strong>Location:</strong> Front of the upper arm</li>
+                  <li><strong>Functions:</strong> Responsible for flexing the elbow and supinating the forearm (turning the palm up)</li>
+                  <li><strong>Importance:</strong> Essential for everyday lifting motions and arm rotation, contributes to the contour of the front arm.</li>
+                  <li><strong>Exercises:</strong> Biceps curls, hammer curls, preacher curls, chin-ups, and concentration curls.</li>
+                </ul>
+                <li><p><strong>Triceps:</strong></p></li>
+                <ul>
+                  <li><strong>Location:</strong> Back of the upper arm</li>
+                  <li><strong>Functions:</strong> Mainly responsible for extension of the elbow joint (straightening the arm)</li>
+                  <li><strong>Importance:</strong> Vital for pushing movements and overall arm and shoulder stability.</li>
+                  <li><strong>Exercises:</strong> Triceps dips, overhead triceps extensions, triceps pushdowns, close-grip bench press, and skull crushers.</li>
+                </ul>                        
+                <li><p><strong> Deltoids (Shoulders):</strong></p></li>
+                <p></p>
+                <ul>
+                  <li><strong>Location:</strong> Shoulders</li>
+                  <li><strong>Functions:</strong> Responsible for shoulder mobility and stability.Three heads(anterior, lateral, posterior) facilitate various shoulder movements. </li>
+                  <li><strong>Importance:</strong> Well-developed deltoids enhance upper body aesthetics and contribute to overall shoulder strength. </li> 
+                  <li><strong>Exercises:</strong>Shoulder presses, lateral raises, front raises, rear deltoid flyes.</li>
+                </ul>
+                <li><p><strong> Pectoralis Major (Chest):</strong></p></li>
+                <p></p>
+                <ul>
+                  <li><strong>Location:</strong> Chest</li>
+                  <li><strong>Functions:</strong> Primary muscle for pushing movements of the arms away from the body. </li>
+                  <li><strong>Importance:</strong> Strong pecs are crucial for chest development, pressing exercises, and overall upper body strength. </li> 
+                  <li><strong>Exercises:</strong> Bench press, push-ups, chest flyes.</li>
+                </ul>
+                <li><p><strong>Trapezius (Traps):</strong></p></li>
+                <p></p>
+                <ul>
+                  <li><strong>Location:</strong> Upper back and neck</li>
+                  <li><strong>Functions:</strong> Supports shoulder movement, helps with neck extension, and shoulder elevation</li>
+                  <li><strong>Importance:</strong> Well-developed traps contribute to overall upper body strength and posture. </li> 
+                  <li><strong>Exercises:</strong> Shrugs, upright rows, face pulls.</li>
+                </ul>
+                </ol>
+                  </section>
+
+            <section class="legs-section">
+                <h2>Lower Body</h2>
+                <ol>
+                  <li><p><strong>Quadriceps (Quads)</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Front of the thigh</li>
+                    <li><strong>Functions:</strong> Extends the knee joint and assists in hip flexion.</li>
+                    <li><strong>Importance:</strong> Strong quads are essential for leg strength and stability.</li>
+                    <li><strong>Exercises:</strong> Squats, leg press, leg extensions.</li>
+                  </ul>
+                  <li><p><strong>Hamstrings</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Back of the thigh</li>
+                    <li><strong>Functions:</strong> Flexes the knee joint and extends the hip joint.</li>
+                    <li><strong>Importance:</strong> Balanced hamstring strength is crucial for lower body stability and athletic performance.</li>
+                    <li><strong>Exercises:</strong>Deadlifts, hamstring curls, Romanian deadlifts.</li>
+                  </ul>
+                  <li><p><strong>Gluteus Maximus (Glutes)</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Buttocks</li>
+                    <li><strong>Functions:</strong> Extends and rotates the hip joint.</li>
+                    <li><strong>Importance:</strong> Strong glutes are essential for hip stability, posture, and athletic performance.</li>
+                    <li><strong>Exercises:</strong>Squats, hip thrusts, lunges, bridges.</li>
+                  </ul>
+                  <li><p><strong>Calves(Gastrocnemius and Soleus)</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Back of lower leg</li>
+                    <li><strong>Functions:</strong> Plantarflexes the ankle joint(pointing the toes downward.)</li>
+                    <li><strong>Importance:</strong> Strong calves are important for balance and lower body power.</li>
+                    <li><strong>Exercises:</strong> Calf raises, calf extensions, calf raises on a leg press machine.</li> 
+                  </ul>
+                  </ol>
+            </section>
+
+            <section class="abs-section">
+                <h2>Abs</h2>
+                <ol>
+                  <li><p><strong>Rectus Abdominis</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Front of the abdomen (six-pack area)</li>
+                    <li><strong>Functions:</strong> Flexes the abdomen and rotates the pelvis.</li>
+                    <li><strong>Importance:</strong> Well-defined abs are often associated with core strength and aesthetics</li>
+                    <li><strong>Exercises:</strong> Crunches, sit-up, leg raises</li>
+                  </ul>
+                  <li><p><strong>Obliques</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Side of the abdomen</li>
+                    <li><strong>Functions:</strong> Rotate and bend the trunk, provides stability to core.</li>
+                    <li><strong>Importance:</strong> Well-defined abs are often associated with core strength and aesthetics</li>
+                    <li><strong>Exercises:</strong> Crunches, sit-up, leg raises</li>
+                  </ul>
+                  <li><p><strong>Transverse Admominis</strong></p></li>
+                  <p></p>
+                  <ul>
+                    <li><strong>Location:</strong> Innermost layer of the abdomen</li>
+                    <li><strong>Functions:</strong> Stabilize the spine and compresses the abdominal contents</li>
+                    <li><strong>Importance:</strong> Crucial for core stability and supporting the lower back.</li>
+                    <li><strong>Exercises:</strong> Planks, bird-dog, vacuum excercises</li>
+                  </ul>
+                </ol>
+            </section>
+        </div>
+
+      <div class="video-section">
+        <h2><em>Learn More About Your <strong>Muscles</strong></em> </h2>
+        <div class="video-carousel">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/58gI3jXNnPI?si=Gseqy8UKRPfcgTXE" title="Major Muscle Groups of the Human Body" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/dSU2ATHT830?si=O_bL2q0LDJVcLKI7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item"> 
+                <iframe src="https://www.youtube.com/embed/nuzT2iJESFA?si=9TrOa_4EuO8aiNxj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/z7psWfRLXFY?si=4eR_rUfj43f9kSHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/acp77RhVzMM?si=H8LI3BUhmSYD7Gdu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/2tM1LFFxeKg?si=LpYOAw3bg8DwMMHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/5JmWguyvu7Y?si=TB3e777tDM2Hsnx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/MWcJuLKB7RY?si=7UZPZIw72nO78MoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/hY2fa6Q98-k?si=YIyZE2sRBkKHieNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/z7psWfRLXFY?si=4eR_rUfj43f9kSHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/acp77RhVzMM?si=H8LI3BUhmSYD7Gdu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/2tM1LFFxeKg?si=LpYOAw3bg8DwMMHJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/5JmWguyvu7Y?si=TB3e777tDM2Hsnx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/MWcJuLKB7RY?si=7UZPZIw72nO78MoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/hY2fa6Q98-k?si=YIyZE2sRBkKHieNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+            </div>
+          </div>
+          <button class="up-btn">&uarr;</button>
+          <button class="down-btn">&darr;</button>
+        </div>    
+      </div>
+    </div>
+</div>
+
+<div class="stories">
+    <div class="content-stories">
+        <section class="parallax-stories">
+            <h2 id="header-stories">SUCCESS STORIES</h2>
+        </section>
+        <!-- Row 1 -->
+        <div class="row">
+            <img src="images/dave.jpg" alt="Dave exercising">
+ <div class="text">
+                <h2>Dave M.</h2>
+                <p>"I've been using this fitness website for months and love the variety of workout routines. The nutrition plans are easy to follow and tailored to my goals. It's the best resource for understanding muscle groups and finding new exercises!"</p>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="text">
+                <h2>Hailey S.</h2>
+                <p>"Fantastic site! The exercise catalog is comprehensive, and the detailed breakdowns of muscle groups have really helped me target my workouts better. The personalized nutrition plans have transformed my diet and fitness journey."</p>
+            </div>
+            <img src="images/Hailey.jpg" alt="Hailey Image">
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <img src="images/Sarah.jpg" alt="Sarah Image">
+            <div class="text">
+                <h2>Sarah E.</h2>
+                <p>"This fitness platform is a game-changer. The workout routines are dynamic and engaging, perfect for any fitness level. The nutrition advice is practical and sustainable. Highly recommend for anyone serious about health!"</p>
+            </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="row">
+            <div class="text">
+                <h2>William D.</h2>
+                <p>"I've tried many fitness websites, but this one stands out. The exercise catalog is robust, and the explanations of muscle groups help me focus my efforts. The nutrition plans are also a big plus, offering great tips and delicious, healthy recipes."</p>
+            </div>
+            <img src="images/William.jpg" alt="William Image">
+        </div>
+        <!-- Row 5 -->
+        <div class="row">
+            <img src="images/Zach.jpg" alt="Zach Image">
+            <div class="text">
+                <h2>Zach W.</h2>
+                <p>"What an incredible resource! The site offers a wide range of workouts that are updated regularly and nutrition plans that actually taste good. It's been instrumental in my physical transformation."</p>
+            </div>
+        </div>
+        <!-- Row 6 -->
+        <div class="row">
+            <div class="text">
+                <h2>Suzy S.</h2>
+                <p>"This website has everything I need in one place. The detailed workout routines and muscle group information have helped me overcome plateaus. Plus, the nutrition plans are flexible and fit perfectly with my dietary needs."</p>
+            </div>
+            <img src="images/Suzy.jpg" alt="Suzy Image">
+        </div>
+        <!-- Row 7 -->
+        <div class="row">
+            <img src="images/Antonio.jpg" alt="Antonio Image">
+            <div class="text">
+                <h2>Antonio L.</h2>
+                <p>"I'm impressed with the thorough exercise catalog and the clarity of information on different muscle groups. The site's nutrition plans are also top-notch, providing all the tools needed for a balanced diet alongside my fitness regimen."</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="workout">
+    <div class="bench">
+        <h1>Workout Routines</h1>
+    </div>
+    <!-- Introduction -->
+    <div class="intro">
+       <h2>Introduction:</h2>
+       <p>
+            Are you ready to get started on your fitness journey? Well you came to the right place! Welcome to our workout routines page. Along with stretching to aid in flexibility and muscle recovery.
+       </p>
+    </div>
+    <!-- stretching -->
+    <div class="stretching">
+        <h2>Warm-Up Stretches / Pre-Workout Stretches:</h2>
+        <i>
+        Before doing any sort of workout you always want to incorporate a warm up set in order to prevent injuries, pain and strains. Below I will provide you with some stretches you should do before your workout. These are going to be one full body stretch/ warm-up.
+        </i>
+        <br>
+        <br>
+        <p><b>Full Body Stretch/Warm-Up:</b></p>
+        <ul>
+            <li><b>Neck Stretch:</b> Sit or stand tall, Gently tilt your head to one side, bringing your ear towards your shoulder. Hold for 15-30 seconds. Repeat on the other side.</li>
+            <li><b>Shoulder Stretch:</b> Bring your right arm across your body. Use your left hand to hold the right arm close to your chest. Hold for 15-30 seconds. Repeat on the other side.</li>
+            <li><b>Triceps Stretch:</b> Reach your right arm overhead and bend it at the elbow. Use your left hand to gently push your right elbow downward. Hold for 15-30 seconds. Repeat on the other side.</li>
+            <li><b>Chest Opener:</b>Stand tall with your feet hip-width apart. Interlace your fingers behind your back. Straighten your arms and lift them away from your body. Open your chest and squeeze your shoulder blades together. Hold for 15-30 seconds.</li>
+            <li><b>Back Stretch:</b>Sit on the floor with your legs extended in front of you. Reach your arms forward and bend at the waist, trying to touch your toes. Hold for 15-30 seconds.</li>
+            <li><b>Quadriceps Stretch:</b>Stand tall and hold onto a wall or chair for balance. Bend your right knee and grab your right ankle with your right hand. Gently pull your heel towards your buttocks. Keep your knees close together and your torso upright. Hold for 15-30 seconds. Repeat on the other side.</li>
+            <li><b>Hamstring Stretch:</b>Sit on the floor with your left leg extended and your right foot against your inner left thigh. Reach forward with both hands towards your left foot. Keep your back straight and your chest lifted. Hold for 15-30 seconds. Repeat on the other side.</li>
+            <li><b>Calf Stretch:</b>Stand facing a wall with your hands on the wall at shoulder height. Step your right foot back and press your right heel into the ground. Keep your right leg straight and your left knee bent. Lean forward into the wall until you feel a stretch in your right calf. Hold for 15-30 seconds. Repeat on the other side.</li>
+        </ul>
+    </div>
+    <!-- routine content -->
+    <div class="routine-container"">
+    <h3>Here are workout routines you can do if you have access to gym equipment or do not:</h3>
+    <br>
+        <i>(I have also provided links on how to do the workout if you are a beginner and do not know how to perform the workout properly)</i>
+    <br>
+    <br>
+        <div class="equipment-routine">	
+            <h2>Routine (with equipment)</h2>
+            <h3>Day 1: Push Workout</h3>
+            <ul>
+                <li><b>Bench Press:</b> 3 sets x 8-10 reps<a href="https://www.youtube.com/shorts/hWbUlkb5Ms4"> Watch video</a></li>
+                <li><b>Shoulder Press:</b> 3 sets x 8-10 reps<a href="https://www.youtube.com/watch?v=3R14MnZbcpw"> Watch video</a></li>
+                <li><b>Tricep Dips:</b> 3 sets x 10-12 reps<a href="https://www.youtube.com/watch?v=0326dy_-CzM"> Watch video</a></li>
+                <li><b>Push-ups:</b> 3 sets x 10-12 reps<a href="https://www.youtube.com/watch?v=FaIpD_zfrJI"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 2: Rest Day</h3>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 3: Pull Workout</h3>
+            <ul>
+                <li><b>Pull-ups:</b> 3 sets x 6-8 reps<a href="https://www.youtube.com/watch?v=jFmCrA6fo78"> Watch video</a></li>
+                <li><b>Rows (with dumbells):</b> 3 sets x 8-10 reps<a href="https://www.youtube.com/watch?v=dFzUjzfih7k"> Watch video</a></li>
+                <li><b>Deadlifts:</b> 3 sets x 6-8 reps<a href="https://www.youtube.com/watch?v=XxWcirHIwVo"> Watch video</a></li>
+                <li><b>Bicep Curls:</b> 3 sets x 10-12 reps<a href="https://www.youtube.com/watch?v=XE_pHwbst04"> Watch video</a></li>
+                <li><b>Face Pulls:</b> 3 sets x 10-12 reps<a href="https://www.youtube.com/watch?v=V8dZ3pyiCBo"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 4: Rest Day</h3>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 5: Leg Day</h3>
+            <ul>
+                <li><b>Squats (with bar):</b> 3 sets x 8-10 reps<a href="https://www.youtube.com/watch?v=gcNh17Ckjgg"> Watch video</a></li>
+                <li><b>Lunges (with dumbells):</b> 3 sets x 10-12 reps per leg<a href="https://www.youtube.com/watch?v=3TM-vVWuLYE"> Watch video</a></li>
+                <li><b>Leg Press:</b> 3 sets x 10-12 reps<a href="https://www.youtube.com/watch?v=W1SD96lrudY"> Watch video</a></li>
+                <li><b>Romanian Deadlifts:</b> 3 sets x 8-10 reps<a href="https://www.youtube.com/watch?v=3VXmecChYYM"> Watch video</a></li>
+                <li><b>Calf Raises:</b> 3 sets x 12-15 reps<a href="https://www.youtube.com/watch?v=GyWw_Q_aIbE"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 6: Rest Day</h3>
+        </div>
+        <div class="equipment-routine">
+            <h3>Day 7: Rest Day</h3>
+        </div>
+        <div class="non-equipment-routine">
+            <h2>Routine (without equipment)</h2>
+            <h3>Day 1: Push Day</h3>
+            <ul>
+                <li><b>Push-ups:</b> 3 sets x 10-15 reps<a href="https://www.youtube.com/watch?v=FaIpD_zfrJI"> Watch video</a></li>
+                <li><b>Pike Push-ups:</b> 3 sets x 8-12 reps<a href="https://www.youtube.com/watch?v=XckEEwa1BPI"> Watch video</a></li>
+                <li><b>Tricep Dips (using a chair or bench):</b> 3 sets x 10-15 reps<a href="https://www.youtube.com/watch?v=0326dy_-CzM"> Watch video</a></li>
+                <li><b>Chest Dips (using parallel bars or sturdy chairs):</b> 3 sets x 10-15 reps<a href="https://www.youtube.com/watch?v=dX_nSOOJIsE"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="non-equipment-routine">
+            <h3>Day 2: Rest Day</h3>
+        </div>
+        <div class="non-equipment-routine">
+            <h3>Day 3: Pull Day</h3>
+            <ul>
+                <li><b>Pull-ups:</b> 3 sets x 6-10 reps<a href="https://www.youtube.com/watch?v=jFmCrA6fo78"> Watch video</a></li>
+                <li><b>Inverted Rows (using a sturdy table or bar at hip height):</b> 3 sets x 10-15 reps<a href="https://www.youtube.com/watch?v=9fItzuh9Iok"> Watch video</a></li>
+                <li><b>Reverse Snow Angels (lie face down, arms extended overhead, lift arms and chest off the ground):</b> 3 sets x 12-15 reps<a href="https://www.youtube.com/watch?v=0qLP2RNKX4A"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="non-equipment-routine">
+            <h3>Day 4: Rest Day</h3>
+        </div>
+        <div class="non-equipment-routine">
+            <h3>Day 5: Leg Day</h3>
+            <ul>
+                <li><b>Bodyweight Squats:</b> 3 sets x 15-20 reps<a href="https://www.youtube.com/watch?v=8uoaYwS6iFM"> Watch video</a></li>
+                <li><b>Lunges (alternating legs):</b> 3 sets x 10-12 reps per leg<a href="https://www.youtube.com/watch?v=YmBw9jhIOsk"> Watch video</a></li>
+                <li><b>Bulgarian Split Squats (elevate back foot on a chair or bench):</b> 3 sets x 10-12 reps per leg<a href="https://www.youtube.com/watch?v=7Aqeb8UHl4k"> Watch video</a></li>
+                <li><b>Glute Bridges:</b> 3 sets x 12-15 reps<a href="https://www.youtube.com/watch?v=OUgsJ8-Vi0E"> Watch video</a></li>
+            </ul>
+        </div>
+        <div class="non-equipment-routine">
+            <h3>Day 6: Rest Day</h3>
+        </div>
+            <div class="non-equipment-routine">
+            <h3>Day 7: Rest Day</h3>
+        </div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+

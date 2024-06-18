@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+            height: 100%;
+            overflow-y: auto;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+    }
+body {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-width: 220px;
+    height: 100vh;
+    background: #e5e4e2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    
+        }
+
+#navigation a, #email-feedback {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 18px 30px;
+    margin: 12px 0;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+#navigation a:hover, #email:hover {
+    background-color: #80bef5;
+    color: white;
+}
+
+.logo a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 70%; 
+}
+
+.logo img {
+    max-width: 80%; 
+justify-content: center; 
+    height: auto; 
+}
+
+
+.main-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  padding: 8px;
+}
+
+form {
+  display: flex;
+}
+
+.top input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+.input_ .search-button {
+  display: block;
+}
+
+.cards {
+  display: flex;
+  height: 60%;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+#card {
+  background-color: #eaeaea;
+  margin: auto;
+  width: 18%;
+  max-width: 250px;
+  height: 90%;
+  line-height: 30px;
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+
+
+.muscle{
+  padding-top: 170px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+}
+
+.splits{
+  background-color: #ffffe0;
+}
+
+
+.upper{
+  padding-bottom: 0px;
+}
+
+.upper-list{
+  padding-top: 10px;
+  padding-left: 20px;
+  
+}
+
+.lower{
+  padding-top: 40px;
+  background-color: #ffffe0;
+
+}
+
+.lower-list{
+  padding-top: 10px;
+  padding-left: 20px;
+  
+}
+
+.core{
+  padding-top: 40px;
+  background-color: #ffffe0;
+
+}
+
+.core-list{
+  padding-top: 10px;
+  padding-left: 20px;
+  
+}
+
+li {
+  margin-bottom: 10px; 
+}
+
+.muscle-header{
+  padding-bottom: 50px;
+  background-color: #ffffe0;
+  font-size: 28px;
+}
+
+.fullbody {
+  padding-top: 150px;
+  width: 400px; 
+  height: 550px; 
+}
+
+.rack {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: 1; 
+  padding-left: 206px;
+  padding-top: 5px;
+  height: 150px;
+  width: 625px;
+}
