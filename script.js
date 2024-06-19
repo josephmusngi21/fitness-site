@@ -21,10 +21,6 @@ function toggleDisplay(className) {
 }
 
 
-
-
-
-
 //Muscle
 document.addEventListener('DOMContentLoaded', (event) => {
     const upButton = document.querySelector('.up-btn');
